@@ -52,7 +52,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Bree Serif', serif;
   font-weight: 700;
 }
 
@@ -71,7 +71,7 @@ h6 {
 .btn-primary {
   border-color:  #1c8922;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Cambay', sans-serif;
   font-weight: 700;
   color: #fff;
   background-color:  #1c8922;
@@ -122,7 +122,7 @@ fieldset[disabled] .btn-primary.active {
   border-color:  #1c8922;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Cambay', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -175,8 +175,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  font-family: 'Oregano', cursive;
   color:  #1c8922;
+  font-size: 30px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -208,7 +209,7 @@ nav.navbar.navbar-default.navbar-fixed-top{
 
 .navbar-default .nav li a {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Cambay', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   color: #fff;
@@ -242,7 +243,7 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 
   .navbar-default .navbar-brand {
-    font-size: 2em;
+    font-size: 3em;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -258,7 +259,7 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 
   .navbar-default.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 }
 
@@ -276,20 +277,25 @@ header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+a.navbar-brand.page-scroll{
+  padding-left: 20px;
+}
 
 header .intro-text .intro-lead-in {
   margin-bottom: 25px;
-  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: 'Cambay', sans-serif;
+  font-size: 26px;
   font-style: italic;
-  line-height: 22px;
+  line-height: 32px;
 }
 
 header .intro-text .intro-heading {
   margin-bottom: 25px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 50px;
+  font-family: 'Cambay', sans-serif;
+  font-size: 70px;
   font-weight: 700;
   line-height: 50px;
 }
@@ -302,10 +308,12 @@ header .intro-text .intro-heading {
 
   header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-family: 'Cambay', sans-serif;
+    font-size: 45px;
     font-style: italic;
-    line-height: 40px;
+    line-height: 55px;
   }
 
   header .intro-text .intro-heading {
@@ -643,6 +651,9 @@ section h3.section-subheading {
 
 .team-member p {
   margin-top: 0;
+}
+footer{
+  background-color: black;
 }
 
 aside.clients img {
