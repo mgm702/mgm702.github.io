@@ -25,7 +25,6 @@ $('.navbar-collapse ul li a').click(function() {
   $('.navbar-toggle:visible').click();
 });
 
-
 var cbpAnimatedHeader = (function() {
 
   var docElem = document.documentElement,
@@ -60,5 +59,4 @@ var cbpAnimatedHeader = (function() {
   }
 
   init();
-
 })();
