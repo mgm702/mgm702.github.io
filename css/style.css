@@ -78,6 +78,8 @@ h6 {
   font-weight: 700;
   color: #fff;
   background-color: #E53E00;
+  background-image: none;
+
 }
 
 .btn-primary:hover,
@@ -264,6 +266,31 @@ nav.navbar.navbar-default.navbar-fixed-top{
 
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 2.5em;
+  }
+}
+#mobile-header {
+  display: none;
+}
+@media(min-width: 767px){
+  div#sidr-main{
+    display: none!important;
+  }
+  body#page-top{
+    width: initial!important;
+    position: initial!important;
+    right: initial!important;
+  }
+}
+a#responsive-menu-button{
+  margin-left: 50%;
+  margin-top: 4px;
+}
+@media only screen and (max-width: 767px){
+  #mobile-header {
+    display: inline-block;
+  }
+  #navigation{
+    display:none;
   }
 }
 
