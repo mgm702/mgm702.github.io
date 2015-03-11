@@ -96,6 +96,12 @@ function sendMail() {
 
   window.location.href = link;
 }
+
+$('#responsive-menu-button').sidr({
+  name: 'sidr-main',
+  source: '#navigation',
+  side: 'right'
+});
 /*
 $(".col-lg-3.text-center.repo").hover(function(){
   $(this).stop(true, true).css("background-color","#E53E00");
