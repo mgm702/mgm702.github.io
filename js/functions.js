@@ -102,6 +102,45 @@ $('#responsive-menu-button').sidr({
   source: '#navigation',
   side: 'right'
 });
+
+
+$('#responsive-menu-button').toggle(
+  function(){
+    $(".navbar-header.page-scroll").css("display","inline-block");
+  },
+  function(){
+    $(".navbar-header.page-scroll").css("display","block");
+  });
+  
+
+$('a#responsive-menu-button').toggle(
+  function(){
+    screenWidth = $(window).width();
+    if(screenWidth >= 400 && screenWidth < 440){
+      $('a#responsive-menu-button').css("margin-left","16%");
+    }
+    if(screenWidth >= 440 && screenWidth < 500){
+      $('a#responsive-menu-button').css("margin-left","25%");
+    }
+    else if(screenWidth >= 500 && screenWidth < 600){
+      $('a#responsive-menu-button').css("margin-left","35%");
+    }
+    else if(screenWidth >= 600 && screenWidth < 767){
+      $('a#responsive-menu-button').css("margin-left","40%");
+    }
+  },
+  function(){
+    screenWidth = $(window).width();
+    if(screenWidth >= 400 && screenWidth < 500){
+      $('a#responsive-menu-button').css("margin-left","50%");
+    }
+    else if(screenWidth >= 500 && screenWidth < 600){
+      $('a#responsive-menu-button').css("margin-left","65%");
+    }
+    else if(screenWidth >= 600 && screenWidth < 767){
+      $('a#responsive-menu-button').css("margin-left","70%");
+    }
+  });
 /*
 $(".col-lg-3.text-center.repo").hover(function(){
   $(this).stop(true, true).css("background-color","#E53E00");
