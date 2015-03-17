@@ -282,9 +282,39 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 }
 a#responsive-menu-button{
-  margin-left: 50%;
-  margin-top: 4px;
+  margin-top: 6px;
 }
+@media all and (min-width: 200px) and (max-width: 299px) {
+  a#responsive-menu-button{
+    position: inherit;
+    margin-left: 50px;
+  }
+}
+@media all and (min-width: 300px) and (max-width: 399px) {
+  a#responsive-menu-button{
+    position: inherit;
+    margin-left: 45%;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 499px) {
+  a#responsive-menu-button{
+    position: fixed;
+    margin-left: 50%;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 599px) {
+  a#responsive-menu-button{
+    position: fixed;
+    margin-left: 65%;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 766px) {
+  a#responsive-menu-button{
+    position: fixed;
+    margin-left: 70%;
+  }
+}
+
 @media only screen and (max-width: 767px){
   #mobile-header {
     display: inline-block;
