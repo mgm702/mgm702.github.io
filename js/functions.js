@@ -104,7 +104,5 @@ $('#responsive-menu-button').sidr({
 });
 
 $("a.btn.btn-default.mobile-btn").click(function(){
-  $("#responsive-menu-button").click();
+  $("#responsive-menu-button").vclick();
 });
-
-$('a.btn.btn-default.mobile-btn').vclick(function(){$("#responsive-menu-button").vclick();} );
