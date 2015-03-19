@@ -99,56 +99,19 @@ function sendMail() {
 
 $('#responsive-menu-button').sidr({
   name: 'sidr-main',
-  source: '#navigation',
-  side: 'right'
+  side: 'right',
+  displace: false,
+  source: function(name) {
+    return '<a class="btn btn-default mobile-btn" >Close Menu <i class="fa fa-times"></i></a><nav class="nav"><ul class="nav navbar-nav navbar-right" id="nav-menu"><li><a class="page-scroll" href="#">Home <i class="fa fa-home"></i></a></li><li><a class="page-scroll" href="#about">About</a></li><li><a class="page-scroll" href="#open-source">Open Source</a></li><li><a class="page-scroll" href="#portfolio">Websites</a></li><li><a class="page-scroll" href="#contact">Contact</a></li></ul></nav>';
+  }
+
 });
 
-
-$('#responsive-menu-button').toggle(
-  function(){
-    $(".navbar-header.page-scroll").css("display","inline-block");
-  },
-  function(){
-    $(".navbar-header.page-scroll").css("display","block");
-  });
-  
-
-$('a#responsive-menu-button').toggle(
-  function(){
-    screenWidth = $(window).width();
-    if(screenWidth >= 400 && screenWidth < 440){
-      $('a#responsive-menu-button').css("margin-left","16%");
-    }
-    if(screenWidth >= 440 && screenWidth < 500){
-      $('a#responsive-menu-button').css("margin-left","25%");
-    }
-    else if(screenWidth >= 500 && screenWidth < 600){
-      $('a#responsive-menu-button').css("margin-left","35%");
-    }
-    else if(screenWidth >= 600 && screenWidth < 767){
-      $('a#responsive-menu-button').css("margin-left","40%");
-    }
-  },
-  function(){
-    screenWidth = $(window).width();
-    if(screenWidth >= 400 && screenWidth < 500){
-      $('a#responsive-menu-button').css("margin-left","50%");
-    }
-    else if(screenWidth >= 500 && screenWidth < 600){
-      $('a#responsive-menu-button').css("margin-left","65%");
-    }
-    else if(screenWidth >= 600 && screenWidth < 767){
-      $('a#responsive-menu-button').css("margin-left","70%");
-    }
-  });
-/*
-$(".col-lg-3.text-center.repo").hover(function(){
-  $(this).stop(true, true).css("background-color","#E53E00");
-  $(this).css("color","black");
-  $("#gh_repo a").css("color","black");
-}, function(){
-  $(this).stop(true, true).css("background-color","#2f2f2f");
-  $(this).css("color","white");
-  $("#gh_repo a").css("color","black");
+$("#responsive-menu-button").click(function(){
+  $(".fa.fa-times").fadeIn( "slow" );
 });
-*/
+
+$("a.btn.btn-default.mobile-btn").click(function(){
+  $(".fa.fa-times").fadeOut( 'fast' );
+  $("#responsive-menu-button").delay(8000).click();
+});
