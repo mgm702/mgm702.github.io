@@ -79,7 +79,6 @@ h6 {
   color: #fff;
   background-color: #E53E00;
   background-image: none;
-
 }
 
 .btn-primary:hover,
@@ -282,8 +281,8 @@ nav.navbar.navbar-default.navbar-fixed-top{
   }
 }
 a#responsive-menu-button{
-  margin-top: 6px;
   margin-left: 70%;
+  margin-top: 6px;
 }
 @media only screen and (max-width: 544px){
   a#responsive-menu-button{
@@ -324,12 +323,13 @@ a.btn.btn-default.mobile-btn{
   width: inherit;
   border-radius: 0px;
 }
-.nav>li:hover{
+.nav>li>a:hover{
   background-color: #E53E00;
 }
 .nav>li>a:focus{
   background: none;
 }
+
 @media only screen and (max-width: 767px){
   #mobile-header {
     display: block;

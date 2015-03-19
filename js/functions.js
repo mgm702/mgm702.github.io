@@ -20,10 +20,6 @@ $('body').scrollspy({
   target: '.navbar-fixed-top'
 })
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  $('.navbar-toggle:visible').click();
-});
 
 var cbpAnimatedHeader = (function() {
   var docElem = document.documentElement,
@@ -43,12 +39,12 @@ var cbpAnimatedHeader = (function() {
   function scrollPage() {
     var sy = scrollY();
     if ( sy >= changeHeaderOn ) {
-      classie.add( header, 'navbar-shrink' );
+      $(header).addClass('navbar-shrink');
       $("nav.navbar.navbar-default.navbar-fixed-top").css("background", "black");
       $("a.navbar-brand.page-scroll").css("color","#E53E00");
     }
     else {
-      classie.remove( header, 'navbar-shrink' );
+      $(header).removeClass('navbar-shrink');
       $("nav.navbar.navbar-default.navbar-fixed-top").css("background", "none");
       $("a.navbar-brand.page-scroll").css("color", "#fff");
     }
@@ -106,12 +102,11 @@ $('#responsive-menu-button').sidr({
   }
 
 });
-
 $("#responsive-menu-button").click(function(){
   $(".fa.fa-times").fadeIn( "slow" );
 });
 
 $("a.btn.btn-default.mobile-btn").click(function(){
   $(".fa.fa-times").fadeOut( 'fast' );
-  $("#responsive-menu-button").click();
+  $("#responsive-menu-button").delay(8).click();
 });
