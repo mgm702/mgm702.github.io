@@ -102,11 +102,7 @@ $('#responsive-menu-button').sidr({
   }
 
 });
-$("#responsive-menu-button").click(function(){
-  $(".fa.fa-times").fadeIn( "slow" );
-});
 
 $("a.btn.btn-default.mobile-btn").click(function(){
-  $(".fa.fa-times").fadeOut( 'fast' );
   $("#responsive-menu-button").delay(8).click();
 });
