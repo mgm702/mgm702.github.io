@@ -102,7 +102,6 @@ $('#responsive-menu-button').sidr({
   }
 
 });
-
-$("a.btn.btn-default.mobile-btn").click(function(){
-  $("#responsive-menu-button").vclick();
+$('a.btn.btn-default.mobile-btn').on("click", function() {
+  $("#responsive-menu-button").click();
 });
