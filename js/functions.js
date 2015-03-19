@@ -102,6 +102,9 @@ $('#responsive-menu-button').sidr({
   }
 
 });
-$('a.btn.btn-default.mobile-btn').on("click", function() {
-  $("#responsive-menu-button").click();
+
+$(document).ready(function(){
+  $('a.btn.btn-default.mobile-btn').on("click", function() {
+    $("#responsive-menu-button").click();
+  });
 });
