@@ -104,6 +104,6 @@ $('#responsive-menu-button').sidr({
 });
 
 
-$('a.btn.btn-default.mobile-btn').on("click", function() {
+$(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function() {
   $("#responsive-menu-button").trigger( "click" );
 });
