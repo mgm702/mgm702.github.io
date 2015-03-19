@@ -322,6 +322,7 @@ a.btn.btn-default.mobile-btn{
   border: none;
   width: inherit;
   border-radius: 0px;
+  cursor: pointer;
 }
 .nav>li>a:hover{
   background-color: #E53E00;
