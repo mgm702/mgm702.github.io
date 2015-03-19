@@ -103,8 +103,7 @@ $('#responsive-menu-button').sidr({
 
 });
 
-$(document).ready(function(){
-  $('a.btn.btn-default.mobile-btn').on("click", function() {
-    $("#responsive-menu-button").click();
-  });
+
+$('a.btn.btn-default.mobile-btn').on("click", function() {
+  $("#responsive-menu-button").trigger( "click" );
 });
