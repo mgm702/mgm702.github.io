@@ -103,7 +103,7 @@ $('#responsive-menu-button').sidr({
 
 });
 
-
 $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function() {
+  event.preventDefault();
   $("#responsive-menu-button").trigger( "click" );
 });
