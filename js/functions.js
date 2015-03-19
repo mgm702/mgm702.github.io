@@ -113,5 +113,5 @@ $("#responsive-menu-button").click(function(){
 
 $("a.btn.btn-default.mobile-btn").click(function(){
   $(".fa.fa-times").fadeOut( 'fast' );
-  $("#responsive-menu-button").delay(8000).click();
+  $("#responsive-menu-button").click();
 });
