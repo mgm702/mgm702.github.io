@@ -107,4 +107,4 @@ $("a.btn.btn-default.mobile-btn").click(function(){
   $("#responsive-menu-button").click();
 });
 
-$('a.btn.btn-default.mobile-btn').bind( "touchstart", function(){$("#responsive-menu-button").click();} );
+$('a.btn.btn-default.mobile-btn').bind( "touchstart", function(){$("#responsive-menu-button").hover();} );
