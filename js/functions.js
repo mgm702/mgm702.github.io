@@ -104,5 +104,7 @@ $('#responsive-menu-button').sidr({
 });
 
 $("a.btn.btn-default.mobile-btn").click(function(){
-  $("#responsive-menu-button").delay(8).click();
+  $("#responsive-menu-button").click();
 });
+
+//$('a.btn.btn-default.mobile-btn').bind( "touchstart", function(){alert('Span Clicked!')} );
