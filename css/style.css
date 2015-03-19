@@ -283,41 +283,56 @@ nav.navbar.navbar-default.navbar-fixed-top{
 }
 a#responsive-menu-button{
   margin-top: 6px;
+  margin-left: 70%;
 }
-@media all and (min-width: 200px) and (max-width: 299px) {
+@media only screen and (max-width: 544px){
   a#responsive-menu-button{
-    position: inherit;
-    margin-left: 50px;
-  }
-}
-@media all and (min-width: 300px) and (max-width: 399px) {
-  a#responsive-menu-button{
-    position: inherit;
-    margin-left: 45%;
-  }
-}
-@media all and (min-width: 400px) and (max-width: 499px) {
-  a#responsive-menu-button{
-    position: fixed;
-    margin-left: 50%;
-  }
-}
-@media all and (min-width: 500px) and (max-width: 599px) {
-  a#responsive-menu-button{
-    position: fixed;
     margin-left: 65%;
   }
 }
-@media all and (min-width: 600px) and (max-width: 766px) {
+@media only screen and (max-width: 477px){
   a#responsive-menu-button{
-    position: fixed;
-    margin-left: 70%;
+    margin-left: 60%;
+  }
+}
+@media only screen and (max-width: 477px){
+  a#responsive-menu-button{
+    margin-left: 50%;
+  }
+}
+@media only screen and (max-width: 325px){
+  a#responsive-menu-button{
+    margin-left: 40%;
+  }
+}
+@media only screen and (max-width: 250px){
+  a#responsive-menu-button{
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 178px){
+  a#responsive-menu-button{
+    margin-left: 3%;
   }
 }
 
+a.btn.btn-default.mobile-btn{
+  background-image: none;
+  background-color: #E53E00;
+  color: #fff;
+  border: none;
+  width: inherit;
+  border-radius: 0px;
+}
+.nav>li:hover{
+  background-color: #E53E00;
+}
+.nav>li>a:focus{
+  background: none;
+}
 @media only screen and (max-width: 767px){
   #mobile-header {
-    display: inline-block;
+    display: block;
   }
   #navigation{
     display:none;
