@@ -322,6 +322,8 @@ a.btn.btn-default.mobile-btn{
   border: none;
   width: inherit;
   border-radius: 0px;
+}
+a.btn.btn-default.mobile-btn.ui-link{
   cursor: pointer;
 }
 .nav>li>a:hover{
