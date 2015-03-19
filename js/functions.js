@@ -103,7 +103,7 @@ $('#responsive-menu-button').sidr({
 
 });
 
-$(document).on('click', 'a.btn.btn-default.mobile-btn', function(event) {
+$(document).on('click touchend', 'a.btn.btn-default.mobile-btn', function(event) {
   event.preventDefault();
   $("#responsive-menu-button").click();
 });
