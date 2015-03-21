@@ -101,7 +101,7 @@ $('#responsive-menu-button').sidr({
 $(document).ready(function(){
   $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function(event) {
     event.preventDefault();
-    $("#responsive-menu-button").click();
+    $("#responsive-menu-button").prev("a.ui-btn").unbind().click();
     alert("Finished the click for menu button!");
   })
 });
