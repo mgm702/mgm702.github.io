@@ -93,16 +93,14 @@ $('#responsive-menu-button').sidr({
   side: 'right',
   displace: false,
   source: function(name) {
-    return '<a class="btn btn-default mobile-btn" onclick="jQuery.sidr("close", "sidr-main");" >Close Menu <i class="fa fa-times"></i></a><nav class="nav"><ul class="nav navbar-nav navbar-right" id="nav-menu"><li><a class="page-scroll" href="#page-top">Home <i class="fa fa-home"></i></a></li><li><a class="page-scroll" href="#about">About</a></li><li><a class="page-scroll" href="#open-source">Open Source</a></li><li><a class="page-scroll" href="#portfolio">Websites</a></li><li><a class="page-scroll" href="#contact">Contact</a></li></ul></nav>';
+    return '<a class="btn btn-default mobile-btn" onclick="" >Close Menu <i class="fa fa-times"></i></a><nav class="nav"><ul class="nav navbar-nav navbar-right" id="nav-menu"><li><a class="page-scroll" href="#page-top">Home <i class="fa fa-home"></i></a></li><li><a class="page-scroll" href="#about">About</a></li><li><a class="page-scroll" href="#open-source">Open Source</a></li><li><a class="page-scroll" href="#portfolio">Websites</a></li><li><a class="page-scroll" href="#contact">Contact</a></li></ul></nav>';
   }
 
 });
-/*
+
 $(document).ready(function(){
-  $(document).on('click touchstart', 'button.btn.btn-default.mobile-btn', function(event) {
+  $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function(event) {
     event.preventDefault();
     $.sidr('close','sidr-main');
-    alert("Finished the click for menu button!");
   })
 });
-*/
