@@ -88,6 +88,7 @@ function sendMail() {
   window.location.href = link;
 }
 
+$(document).ready(function(){
 $('#responsive-menu-button').sidr({
   name: 'sidr-main',
   side: 'right',
@@ -96,11 +97,6 @@ $('#responsive-menu-button').sidr({
     return '<a class="btn btn-default mobile-btn" onclick="" >Close Menu <i class="fa fa-times"></i></a><nav class="nav"><ul class="nav navbar-nav navbar-right" id="nav-menu"><li><a class="page-scroll" href="#page-top">Home <i class="fa fa-home"></i></a></li><li><a class="page-scroll" href="#about">About</a></li><li><a class="page-scroll" href="#open-source">Open Source</a></li><li><a class="page-scroll" href="#portfolio">Websites</a></li><li><a class="page-scroll" href="#contact">Contact</a></li></ul></nav>';
   }
 
-});
-
-$(document).ready(function(){
-  $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function(event) {
-    event.preventDefault();
-    $.sidr('close','sidr-main');
-  })
+  });
+  $.sidr('close','sidr-main');
 });
