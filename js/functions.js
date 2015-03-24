@@ -98,5 +98,8 @@ $('#responsive-menu-button').sidr({
   }
 
   });
-  $.sidr('close','sidr-main');
+  $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function(event) {
+    event.preventDefault();
+    $.sidr('close','sidr-main');
+  })
 });
