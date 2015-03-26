@@ -113,7 +113,9 @@
   padding: 0 15px;
   display: block;
   text-decoration: none;
-  color: #fff
+  color: #fff;
+  font-family: "Oregano";
+  letter-spacing: 1px;
 }
 .sidr ul li ul {
   border-bottom: none;
