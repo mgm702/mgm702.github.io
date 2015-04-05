@@ -666,7 +666,7 @@ ul.social-buttons li a:active {
 }
 .col-lg-8.col-lg-offset-2.background{
   width: 100%;
-  height: 4.5em;
+  height: 10em;
   margin-left: 0px;
   padding: 0px;
   background-repeat: no-repeat;
@@ -700,4 +700,29 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #E53E00;
+}
+p.site-info{
+  padding: 10px 10px 10px 10px;
+  font-size: 17px;
+  line-height: 1.55;
+
+}
+.btn.btn-primary.modal-button{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.site-info a.btn.btn-primary{
+  background-color: #181818;
+  color: #E53E00;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.site-info a.btn.btn-primary:hover{
+  background-color: #E53E00;
+  color: #181818;
+
 }
