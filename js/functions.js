@@ -13,7 +13,7 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
   target: '.navbar-fixed-top'
-})
+});
 
 
 var cbpAnimatedHeader = (function() {
@@ -101,5 +101,5 @@ $('#responsive-menu-button').sidr({
   $(document).on('click touchstart', 'a.btn.btn-default.mobile-btn', function(event) {
     event.preventDefault();
     $.sidr('close','sidr-main');
-  })
+  });
 });
