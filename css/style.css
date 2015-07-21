@@ -498,7 +498,10 @@ p.about-text{
 img.img-responsive.websites{
   max-width: 70%;
   margin-top: 50px;
-  border-radius: 25px;
+  border-radius: 5px
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
 }
 .img-responsive.about-header{
   height: 90%;
