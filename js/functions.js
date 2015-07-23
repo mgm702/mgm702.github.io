@@ -36,11 +36,13 @@ var cbpAnimatedHeader = (function() {
     if ( sy >= changeHeaderOn ) {
       $(header).addClass('navbar-shrink');
       $("nav.navbar.navbar-default.navbar-fixed-top").css("background", "black");
+      $("nav.navbar.navbar-default.navbar-fixed-top").css("box-shadow", "2px 2px 5px 0px rgba(0,0,0,0.62)");
       $("a.navbar-brand.page-scroll").css("color","#E53E00");
     }
     else {
       $(header).removeClass('navbar-shrink');
       $("nav.navbar.navbar-default.navbar-fixed-top").css("background", "none");
+      $("nav.navbar.navbar-default.navbar-fixed-top").css("box-shadow", "none");
       $("a.navbar-brand.page-scroll").css("color", "#fff");
     }
     didScroll = false;

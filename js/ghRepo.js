@@ -14,7 +14,7 @@ $(document).ready(function(){
 });
 function outputRepoContent(repositories) {
   var repoOutput = '';
-  if(repositories.length == 0) { repoOutput = '<p>No repos found unfortunately <i class="fa fa-frown-o fa-4x"></i> !</p>'; }
+  if(repositories.length === 0) { repoOutput = '<p>No repos found unfortunately <i class="fa fa-frown-o fa-4x"></i> !</p>'; }
   else {
 
     for(i = 0; i < repositories.length; i++)

@@ -486,6 +486,9 @@ button.btn-lg{
   color: #fff;
   border: 0px;
   background-color: #E53E00;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62); 
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
 }
 
 p.about-text{
@@ -498,7 +501,7 @@ p.about-text{
 img.img-responsive.websites{
   max-width: 70%;
   margin-top: 50px;
-  border-radius: 5px
+  border-radius: 5px;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.62);
@@ -506,6 +509,10 @@ img.img-responsive.websites{
 .img-responsive.about-header{
   height: 90%;
   width: 80%;
+}
+img.img-responsive.vim-powered{
+    max-width: 200px;
+    margin-bottom: 20px;
 }
 @media(min-width:768px) {
   section {
@@ -657,8 +664,8 @@ ul.social-buttons li a:active {
 }
 @media(max-width:767px) {
   .modal-content{
-    margin-right: 50px;
-    margin-left: 50px;
+      margin-right: 50px;
+      margin-left: 50px;
   }
 }
 @media(min-width:1400px) {
@@ -711,22 +718,26 @@ p.site-info{
 
 }
 .btn.btn-primary.modal-button{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+    display: block;
+    margin-left: auto;
 }
 .site-info a.btn.btn-primary{
-  background-color: #181818;
-  color: #E53E00;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  font-size: 18px;
+    background-color: #181818;
+    color: #E53E00;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 22px;
+}
+button.btn.btn-primary.modal-button{
+  background-color: transparent;
+  border:transparent;
+  font-size: 2.5em;
 }
 .site-info a.btn.btn-primary:hover{
-  background-color: #E53E00;
-  color: #181818;
+    background-color: #E53E00;
+    color: #181818;
 
 }
 .fa.fa-mobile.fa-lg{
