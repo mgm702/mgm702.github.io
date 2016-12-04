@@ -6,4 +6,32 @@ div.row.main{
 }
 h3.site-title{
   font-weight: bold;
+  margin-bottom: 5px;
+}
+p.intro-text{
+  font-size: 16px;
+}
+h3.site-title a{
+  text-decoration: none;
+  color: inherit;
+}
+img.main-img{
+  padding: 10px;
+  background: #efefef;
+  border-radius: 2px;
+  box-shadow: 2px 2px lightgray;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+ul.site-links{
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+ul.site-links li i.fa{
+  padding-right: 5px;
+}
+ul.site-links li a{
+  text-decoration: none;
 }
