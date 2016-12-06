@@ -15,6 +15,9 @@ h3.site-title a{
   text-decoration: none;
   color: inherit;
 }
+h3.os-title{
+  margin-bottom: 1rem;
+}
 img.main-img{
   padding: 10px;
   background: #efefef;
@@ -29,9 +32,51 @@ ul.site-links{
   font-weight: bold;
   font-size: 16px;
 }
+ul.book-list li div:last-of-type{
+  margin-left: 30px;
+}
+ul.book-list li div span{
+  font-weight: bold;
+}
+ul.book-list li div a{
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 5px;
+}
 ul.site-links li i.fa{
   padding-right: 5px;
 }
 ul.site-links li a{
   text-decoration: none;
+}
+ul.open-source-projects li{
+  list-style: none;
+}
+ul.open-source-projects li a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+a.intro-link{
+  text-decoration: none;
+}
+/* Media break for Mobile */
+@media (max-width: 950px) and (min-width: 801px){
+  div.container{
+    width: 80%;
+  }
+}
+@media (max-width: 800px){
+  div.container{
+    width: 90%; 
+  }
+  .five.columns{
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+  }
+  .seven.columns{
+    width: 100%;
+    float: left;
+  }
 }
