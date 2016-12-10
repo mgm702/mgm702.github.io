@@ -43,6 +43,9 @@ ul.book-list li div a{
   font-size: 16px;
   margin-left: 5px;
 }
+a.book-contact-list{
+  text-decoration: none;
+}
 ul.site-links li i.fa{
   padding-right: 5px;
 }
