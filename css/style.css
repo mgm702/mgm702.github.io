@@ -27,13 +27,20 @@ img.main-img{
   height: auto;
   max-width: 100%;
 }
+div.row.main div.seven.columns{
+  margin-bottom: 40px;
+}
 ul.site-links{
   list-style: none;
   font-weight: bold;
   font-size: 16px;
 }
+ul.book-list li div:first-of-type{
+  display: initial;
+}
 ul.book-list li div:last-of-type{
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 ul.book-list li div span{
   font-weight: bold;
